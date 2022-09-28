@@ -11,10 +11,11 @@ namespace CoffeeShopLab.Models
         public string description { get; set; }
         public decimal price { get; set; }
         public int inventory { get; set; }
+        public string category { get; set; }
 
         public override string ToString()
         {
-            return $"{id} {name} {description} {price} {inventory}";
+            return $"{id} {name} {description} {price} {inventory} {category}";
         }
     }
 }

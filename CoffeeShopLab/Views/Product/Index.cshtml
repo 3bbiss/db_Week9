@@ -1,4 +1,4 @@
-﻿@model List<Product>;
+﻿@model IEnumerable<Product>;
 
 @{
     ViewData["Title"] = "Index";
@@ -6,14 +6,45 @@
 
 <h1>Coffee shop!</h1>
 
-@foreach (Product prod in Model){
-    <div>@prod.ToString();</div>
-}
+<table>
+    <thead>
+        <tr>
+            <th>Product Details</th>
+        </tr>
+    </thead>
 
-<br /><br />
+    <tbody>
+        @foreach (Product prod in Model){
+            <tr>
+                <td><a href="/Product/Detail?id=@prod.id">@prod.name</a></td>
+            </tr>
+        }
+    </tbody>
 
-@foreach (Product prod in Model){
-    <div>
-        <a method="post" action="/product/detail" href="Detail">@prod.name</a>
-    </div>
-}
+</table>
+
+
+
+
+<table>
+    <thead>
+        <tr>
+            <th>Product Category</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @*@foreach (Product prod in (IEnumerable<Product>)ViewData["categories"]){
+            <tr>
+                <td>@prod.name</td>
+            </tr>
+            }*@
+
+        @foreach (Product prod in Model){
+            <tr>
+                <td><a href="/Product/Category?category=@prod.category">@prod.category</a></td>
+            </tr>
+        }
+    </tbody>
+
+</table>

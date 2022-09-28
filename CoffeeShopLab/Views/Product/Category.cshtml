@@ -1,0 +1,10 @@
+﻿@model IEnumerable<Product>;
+@{
+    ViewData["Title"] = "Category";
+}
+
+<h1>Products in category</h1>
+
+@foreach (Product prod in (List<Product>)ViewData["categories"]){
+    <div>@prod.name</div>
+    }
