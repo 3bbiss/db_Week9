@@ -24,14 +24,32 @@ namespace BusinessPortal.Controllers
             //return Content(id);
             var db = new MySqlConnection("Server=127.0.0.1;Database=business;Uid=root;Pwd=abc123;");
             Department dep = db.Get<Department>(id);
+
+            // Get a list of ppl in dept.
+            List<Employee> emps = db.Query<Employee>($"select * from employee where department = '{id}'").ToList();
+            ViewData["employees"] = emps;
             return View(dep);
         }
 
         // View that presents a form for adding a new department
+        public IActionResult AddForm()
+        {
+            return View();
+        }
 
         // (C)RUD An action that responds to the form for adding a new department
 
         // CRU(D) Delete a department
+        public IActionResult Delete(string id)
+        {
+            var db = new MySqlConnection("Server=127.0.0.1;Database=business;Uid=root;Pwd=abc123;");
+            Department dep = new Department() { id = id };
+            db.Delete<Department>(dep);
+            return Redirect("/Department");
+            //return Content("Deleted!");
+            //return View();
+        }
+
 
         // CR(U)D Edit a department 
     }

@@ -8,3 +8,9 @@
 Department Code: @Model.id <br />
 Full Name: @Model.name <br />
 Location: @Model.location <br />
+
+<h2>Employees in @Model.name</h2>
+
+@foreach (Employee emp in (List<Employee>)ViewData["employees"]){
+    <div>@emp.firstname  @emp.lastname</div>
+}
