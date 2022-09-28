@@ -20,7 +20,11 @@ namespace BusinessPortal.Controllers
         // C(R)UD View a single department and its details
         public IActionResult Detail(string id)
         {
-            return Content(id);
+            // validates we're receiving correct value/param.
+            //return Content(id);
+            var db = new MySqlConnection("Server=127.0.0.1;Database=business;Uid=root;Pwd=abc123;");
+            Department dep = db.Get<Department>(id);
+            return View(dep);
         }
 
         // View that presents a form for adding a new department
