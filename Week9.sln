@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DapperConsole2", "DapperCon
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GroceryStoreDemo", "GroceryStoreDemo\GroceryStoreDemo.csproj", "{718D49BE-A46F-4988-9143-5DE484773A50}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeShopLab", "CoffeeShopLab\CoffeeShopLab.csproj", "{71501C21-13AF-4E37-AB7A-A2F5A9FFE8A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoffeeShopLab", "CoffeeShopLab\CoffeeShopLab.csproj", "{71501C21-13AF-4E37-AB7A-A2F5A9FFE8A7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessPortal", "BusinessPortal\BusinessPortal\BusinessPortal.csproj", "{8302EBF7-9E82-4732-B9FF-4EDE05B55F24}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{71501C21-13AF-4E37-AB7A-A2F5A9FFE8A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{71501C21-13AF-4E37-AB7A-A2F5A9FFE8A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{71501C21-13AF-4E37-AB7A-A2F5A9FFE8A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8302EBF7-9E82-4732-B9FF-4EDE05B55F24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8302EBF7-9E82-4732-B9FF-4EDE05B55F24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8302EBF7-9E82-4732-B9FF-4EDE05B55F24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8302EBF7-9E82-4732-B9FF-4EDE05B55F24}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
