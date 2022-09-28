@@ -1,0 +1,19 @@
+﻿@model List<Product>;
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Coffee shop!</h1>
+
+@foreach (Product prod in Model){
+    <div>@prod.ToString();</div>
+}
+
+<br /><br />
+
+@foreach (Product prod in Model){
+    <div>
+        <a method="post" action="/product/detail" href="Detail">@prod.name</a>
+    </div>
+}

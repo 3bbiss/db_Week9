@@ -5,9 +5,11 @@ VisualStudioVersion = 17.3.32804.467
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DapperConsole", "DapperConsole\DapperConsole.csproj", "{3271E6A2-BED5-4CA3-9A80-6375E7C39E2C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DapperConsole2", "DapperConsole2\DapperConsole2.csproj", "{884787D4-D75E-4E5D-B491-73E16E2D95DC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DapperConsole2", "DapperConsole2\DapperConsole2.csproj", "{884787D4-D75E-4E5D-B491-73E16E2D95DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GroceryStoreDemo", "GroceryStoreDemo\GroceryStoreDemo.csproj", "{718D49BE-A46F-4988-9143-5DE484773A50}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GroceryStoreDemo", "GroceryStoreDemo\GroceryStoreDemo.csproj", "{718D49BE-A46F-4988-9143-5DE484773A50}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeShopLab", "CoffeeShopLab\CoffeeShopLab.csproj", "{71501C21-13AF-4E37-AB7A-A2F5A9FFE8A7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{718D49BE-A46F-4988-9143-5DE484773A50}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{718D49BE-A46F-4988-9143-5DE484773A50}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{718D49BE-A46F-4988-9143-5DE484773A50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71501C21-13AF-4E37-AB7A-A2F5A9FFE8A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71501C21-13AF-4E37-AB7A-A2F5A9FFE8A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71501C21-13AF-4E37-AB7A-A2F5A9FFE8A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71501C21-13AF-4E37-AB7A-A2F5A9FFE8A7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
